@@ -1,23 +1,34 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <HeaderMenu />
+    <div id="contentArea" class="container-fluid">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
+import HeaderMenu from './components/header'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    HeaderMenu
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  #app {
+    background: #F4F4F4;
+  }
+  #contentArea {
+    margin-top: 62px;
+  }
+
+  @media screen and (max-width: 767px){
+    #contentArea {
+      margin-top: 51px;
+    }
+  }
 </style>
