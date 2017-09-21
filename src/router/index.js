@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 import Home from '@/components/home'
 import Service from '@/components/service'
-import Company from '@/components/company'
+import Vision from '@/components/vision'
 import Contact from '@/components/contact'
 
 Vue.use(Router)
@@ -15,9 +15,9 @@ export default new Router({
       name: 'Home',
       component: Home
     }, {
-      path: '/company',
-      name: 'Company',
-      component: Company
+      path: '/vision',
+      name: 'Vision',
+      component: Vision
     }, {
       path: '/service',
       name: 'Service',

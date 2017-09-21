@@ -4,16 +4,19 @@
     <div id="contentArea" class="container-fluid">
       <router-view></router-view>
     </div>
+    <FooterView />
   </div>
 </template>
 
 <script>
 import HeaderMenu from './components/header'
+import FooterView from './components/footer'
 
 export default {
   name: 'app',
   components: {
-    HeaderMenu
+    HeaderMenu,
+    FooterView
   }
 }
 </script>
